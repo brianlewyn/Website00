@@ -1,0 +1,55 @@
+
+/*----------------------------------------
+---------------- Footer ----------------
+----------------------------------------*/
+footer {
+	width: 100%;
+	height: 14.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background: linear-gradient(
+		to top,
+		var(--BarLight1) 2%,
+		var(--BarLight2) 2%,
+		var(--BarLight3) 1rem
+	);
+}
+body.Dark footer {
+	background: none;
+}
+
+
+hgroup.MoreInfo {
+	margin: 10px;
+	transform: translateY(-4px);
+}
+hgroup.MoreInfo h5 {
+	font-family: 'Poppins-SB', sans-serif;
+	font-size: 2.2rem;
+	color: var(--White);
+}
+
+
+nav.Footer ul {
+	width: 22.5rem;
+	height: 5rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	transform: translateY(-4px);
+}
+nav.Footer li {
+	list-style: none;
+}
+nav.Footer i {
+	font-size: 4.4rem;
+	list-style: none;
+	color: var(--White);
+}
+nav.Footer i:hover {
+	font-size: 4.2rem;
+	color: var(--IconNoItem1);
+	text-shadow: var(--IconNoItem2) 0px 0px 4px;
+}

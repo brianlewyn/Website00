@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Best Web Page</title>
+
+	<!-- Icono File Link -->
+	<link rel="shortchut icon" type="image/x-icon" href="More/FileWeb.ico">
+
+	<!-- Boxicons CDN Link -->
+	<link href='https://unpkg.com/boxicons@2.0.8/css/boxicons.min.css' rel='stylesheet'>
+
+   <!-- Fredoka One (Just For Title) Link -->
+   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+	<!-- My Styles Sheets CSS file -->
+	<link rel="stylesheet" type="text/css" href="Style/A1_Header-Nav.css">
+	<link rel="stylesheet" type="text/css" href="Style/A2_Main.css">
+	<link rel="stylesheet" type="text/css" href="Style/A3_Aside.css">
+	<link rel="stylesheet" type="text/css" href="Style/A4_SpaceForm_Btns-ON_OFF.css">
+	<link rel="stylesheet" type="text/css" href="Style/A5_FormFixed.css">
+	<link rel="stylesheet" type="text/css" href="Style/A6_Footer.css">
+	
+</head>
+<body>
+	
+	<!-- =========================== Header =========================== -->
+	<header>
+		
+		<!-- =========================== Navigation =========================== -->
+		<nav class="Sidebar">
+			<div class="Logo-Details">
+				<a class="Logo" href="Index.html">
+					<img src="More/Logo.svg" alt="Logo" title="Website" width="60">
+					<h2>Website</h2>
+				</a>
+				<i class='bx bx-menu' id="Hamburger"></i>
+			</div>
+			
+			
+			
+			<ul class="Nav-Links">
+				<li>
+					<form class="Search">
+						<button id="Search-Phone" title="Bx-Search">
+							<i class='bx bx-search'></i>
+						</button>
+						<i class='bx bx-search' id="Search-Destok"></i>
+						<input type="Search" placeholder="Search...">
+					</form>
+					<ul class="Sub-Menu Blank">
+						<li><a href="#" class="Link-Name">
+							Search</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">
+						<i class='bx bx-grid-alt' ></i>
+						<span class="Link-Name">Dashboard</span>
+					</a>
+					<ul class="Sub-Menu Blank">
+						<li><a href="#" class="Link-Name">
+							Dashboard</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<div class="Icon-Link">
+						<a href="#">
+							<i class='bx bx-collection' ></i>
+							<span class="Link-Name">Category</span>
+						</a>
+						<i class='bx bxs-chevron-down Arrow'></i>
+					</div>
+					<ul class="Sub-Menu">
+						<li><a href="#" class="Link-Name">
+							Category</a>
+						</li>
+						<li><a href="#">HTML & CSS</a></li>
+						<li><a href="#">JavaScript</a></li>
+						<li><a href="#">PHP & MySQl</a></li>
+					</ul>
+				</li>
+				<li>
+					<div class="Icon-Link">
+						<a href="#">
+							<i class='bx bx-book-alt' ></i>
+							<span class="Link-Name">Posts</span>
+						</a>
+						<i class='bx bxs-chevron-down Arrow'></i>
+					</div>
+					<ul class="Sub-Menu">
+						<li><a href="#" class="Link-Name">
+							Posts</a>
+						</li>
+						<li><a href="#">Web Design</a></li>
+						<li><a href="#">Login Form</a></li>
+						<li><a href="#">Card Design</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">
+						<i class='bx bx-pie-chart-alt-2' ></i>
+						<span class="Link-Name">Analytics</span>
+					</a>
+					<ul class="Sub-Menu Blank">
+						<li><a href="#" class="Link-Name">
+							Analytics</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">
+						<i class='bx bx-line-chart' ></i>
+						<span class="Link-Name">Chart</span>
+					</a>
+					<ul class="Sub-Menu Blank">
+						<li><a href="#" class="Link-Name">Chart</a></li>
+					</ul>
+				</li>
+				<li>
+					<div class="Icon-Link">
+						<a href="#">
+							<i class='bx bx-plug' ></i>
+							<span class="Link-Name">Plugins</span>
+						</a>
+						<i class='bx bxs-chevron-down Arrow'></i>
+					</div>
+					<ul class="Sub-Menu">
+						<li><a href="#" class="Link-Name">
+							Plugins</a>
+						</li>
+						<li><a href="#">UI Face</a></li>
+						<li><a href="#">Pigments</a></li>
+						<li><a href="#">Box Icons</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">
+						<i class='bx bx-compass' ></i>
+						<span class="Link-Name">Explore</span>
+					</a>
+					<ul class="Sub-Menu Blank">
+						<li><a href="#" class="Link-Name">
+							Explore</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">
+						<i class='bx bx-history' ></i>
+						<span class="Link-Name">History</span>
+					</a>
+					<ul class="Sub-Menu Blank">
+						<li><a href="#" class="Link-Name">
+							History</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<div class="Icon-Link Setting">
+						<div>
+							<i class='bx bx-cog' ></i>
+							<span class="Link-Name">Setting</span>
+						</div>
+						<i class='bx bxs-chevron-down Arrow'></i>
+					</div>
+					<ul class="Sub-Menu">
+						<li><a href="#" class="Link-Name">
+							Setting</a>
+						</li>
+						<li>
+							<button class="SubItem" id="DarkMode" onclick="DarkMode()">
+								<i class='bx bx-moon' id="Moon"></i>
+								Dark Mode
+							</button>
+						</li>
+						<li>
+							<button class="SubItem">
+								<i class='bx bx-moon'></i>
+								Prueba 2
+							</button>
+						</li>
+						<li>
+							<button class="SubItem">
+								<i class='bx bx-moon'></i>
+								Prueba 3
+							</button>
+						</li>
+					</ul>
+				</li>			
+			</ul>
+			
+
+			<div class="Profile-Details">
+				<div class="Profile-Img">
+					<img src="More/Profile.jpg" alt="Profile" title="Profile" width="80">
+				</div>
+				<div class="Profile-Name_Job">
+					<div class="Name">Nezuko Kamado</div>
+					<div class="Job">Kimetsu no Yaiba</div>
+				</div>
+				<i class='bx bx-log-out' ></i>
+			</div>
+		</nav>
+	</header>
+
+
+	<!-- =========================== Main =========================== -->
+	<main>
+		<section>
+         <!-- The Topic: -->
+         <h1 class="Gradient-Title">What is a Website?</h1>
+
+			<hgroup class="The-Index">
+				<h2>Sections:</h2>
+				
+				<a href="#Sub1">
+					<h4>Topic Subtitle . . . . . . . . 1</h4>
+				</a><br>
+				<a href="#Sub2">
+					<h4>Topic Subtitle . . . . . . . . 2</h4>
+				</a><br>
+				<a href="#Sub3">
+					<h4>Topic Subtitle . . . . . . . . 3</h4>
+				</a><br>
+				<a href="#Sub4">
+					<h4>Topic Subtitle . . . . . . . . 4</h4>
+				</a>
+			</hgroup>
+
+			<article>
+				<h2 id="Sub1">Subtitle . . . . . . . . 1</h2>
+				
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</article>
+
+			<article>
+				<h2 id="Sub2">Subtitle . . . . . . . . 2</h2>
+				
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</article>
+
+			<article>
+				<h2 id="Sub3">Subtitle . . . . . . . . 3</h2>
+				
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<br><br>
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+				<div class="Blockquote">
+					<p>The only poem that I learned as a child was:</p>
+					<blockquote>
+						Roses are red, violets are blue. A face like yours, belongs in the zoo.
+					</blockquote>
+				</div>
+
+				<dl class="DescriptiveList">
+					<dt>Baseball</dt>
+					<dd>A game played with bats and balls</dd>
+					
+					<dt>Basketball</dt>
+					<dd>A game played with balls and baskets</dd>
+					
+					<dt>Football</dt>
+					<dd>A game played with balls and goals</dd>
+				</dl>
+			</article>
+
+			<article>
+				<h2 id="Sub4">Subtitle . . . . . . . . 4</h2>
+				
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<br>
+
+<div class="Pre"><pre>
+_________________________________________
+<code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;meta charset="utf-8"&gt;
+	&lt;title&gt;My First Web Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	
+	&lt;p&gt;Hello world, I'm Brian.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code>
+_________________________________________
+</pre></div>
+			</article>
+
+			<button id="OnForm" onclick="OnForm()">
+				Form ...
+			</button>
+
+			<div class="MainForm" id="SlidesFlex">
+				<div class="FlexItem">
+					<button id="OffForm" title="Close" onclick="OffForm()">
+						<i class='bx bx-x'></i>
+					</button>
+
+					<h2>Account User</h2>
+
+					<img src="More/UndrawLogin.svg" id="Login" alt="UndrawLogin" title="Login" width="200">
+				</div>
+				
+				<div class="FlexItem">
+					<form class="High-Form">
+						<h3>Enter your personal details</h3>
+
+						<fieldset>
+							<legend>Enter your name</legend>
+							
+							<div class="Full-Input">
+								<input type="text" name="First" autocomplete="off" required>
+								<label for="First" class="Label-Text">
+									<span class="Content-Text">First Name</span>
+								</label>
+							</div>
+							<div class="Full-Input">
+								<input type="text" name="Middle" autocomplete="off" required>
+								<label for="Middle" class="Label-Text">
+									<span class="Content-Text">Middle Name</span>
+								</label>
+							</div>
+							<div class="Full-Input">
+								<input type="text" name="Last" autocomplete="off" required>
+								<label for="Last" class="Label-Text">
+									<span class="Content-Text">Last Name</span>
+								</label>
+							</div>
+						</fieldset>
+
+						<fieldset>
+							<legend>Enter your user</legend>
+							
+							<div class="Full-Input">
+								<input type="text" name="User" autocomplete="off" required>
+								<label for="User" class="Label-Text">
+									<span class="Content-Text">User</span>
+								</label>
+							</div>
+							<div class="Full-Input">
+								<input type="email" name="Email" autocomplete="off" required>
+								<label for="Email" class="Label-Text">
+									<span class="Content-Text">E-mail</span>
+								</label>
+							</div>
+							<div class="Full-Input">
+								<input type="password" name="Pass" autocomplete="off" required>
+								<label for="Pass" class="Label-Text">
+									<span class="Content-Text">Password</span>
+								</label>
+							</div>
+						</fieldset>
+						
+						<div class="Controls">
+							<input type="button" name="Back" value="Back" onclick="myprogram()">
+							<input type="reset" name="Reset" value="Reset">
+							<input type="submit" name="Continue" value="Continue">
+						</div>
+					</form>
+				</div>
+
+				<img src="More/WaveForm.svg" id="Wave" alt="WaveForm" title="Wave" width="200">
+			</div>
+		</section>
+		
+		<hr>
+		<hr>
+
+		<section class="Stn02">
+			<h2>More information</h2>
+
+			<article>
+				<h3>Italica</h3>
+				
+				<p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</i></p>
+			</article>
+
+			<article>
+				<h3>Bold</h3>
+
+				<p><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</b></p>
+			</article>
+
+			<article>
+				<h3>An Unordered List:</h3>
+				
+				<ul>
+					<li>Item1</li>
+					<li>Item2</li>
+					<li>Item3</li>
+					<li>Item4</li>
+					<li>Item5</li>
+				</ul>
+			</article>
+
+			<article>
+				<h3>An Ordered List:</h3>
+				
+				<ol>
+					<li>Walk the dog.</li>
+					<li>Eat breakfast.</li>
+					<li>Read the paper.</li>
+					<li>Get ready for work.</li>
+					<li>Going to work.</li>
+					<li>Listening the Ghost's Music.</li>
+				</ol>
+				<ol type="A">
+					<li>Walk the dog.</li>
+					<li>Eat breakfast.</li>
+					<li>Read the paper.</li>
+					<li>Get ready for work.</li>
+					<li>Going to work.</li>
+					<li>Listening the Ghost's Music.</li>
+				</ol>
+				<ol type="I">
+					<li>Walk the dog.</li>
+					<li>Eat breakfast.</li>
+					<li>Read the paper.</li>
+					<li>Get ready for work.</li>
+					<li>Going to work.</li>
+					<li>Listening the Ghost's Music.</li>
+				</ol>
+			</article>
+
+			<article>
+				<h3>Table:</h3>
+
+				<table>
+					<caption>Bowling Scores</caption>
+					<tr>
+						<th>Bowler</th>
+						<th>Game 1</th>
+						<th>Game 2</th>
+						<th>Game 3</th>
+						<th>Average</th>
+					</tr>
+					
+					<tr>
+						<td>Rich</td>
+						<td>100</td>
+						<td>110</td>
+						<td>95</td>
+						<td>102</td>
+					</tr>
+					
+					<tr>
+						<td>Barbara</td>
+						<td>110</td>
+						<td>105</td>
+						<td>103</td>
+						<td>106</td>
+					</tr>
+					
+					<tr>
+						<td>Katie</td>
+						<td>120</td>
+						<td>125</td>
+						<td>115</td>
+						<td>120</td>
+					</tr>
+					
+					<tr>
+						<td>Jessica</td>
+						<td>115</td>
+						<td>120</td>
+						<td>120</td>
+						<td>118</td>
+					</tr>
+				</table>
+			</article>
+		</section>
+	</main>
+
+
+	<!-- =========================== Aside =========================== -->
+	<aside class="Ad">
+		<h2>Video's relation</h2>
+		
+		<div class="Grid-Video">
+			<div class="Item-Video">
+				<iframe src="https://www.youtube.com/embed/hZL2O2UR6Pw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="Item-Video">
+				<iframe src="https://www.youtube.com/embed/nzxLTLNsXZQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="Item-Video">
+				<iframe src="https://www.youtube.com/embed/Y4uFkcvpi3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="Item-Video">
+				<iframe src="https://www.youtube.com/embed/vbfC7Lq_Otc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+	</aside>
+	
+
+	<!-- =========================== Footer =========================== -->
+	<footer class="Ft">
+		<hgroup class="MoreInfo">
+			<h5>&copy; 2021 Website Brian M. M.</h5>
+		</hgroup>
+
+		<nav class="Footer">
+			<ul>
+				<li>
+					<a href="https://www.facebook.com" target="_blank" title="Facebook">
+					<i class='bx bxl-facebook-circle'></i></a>
+				</li>
+				<li><a href="https://www.instagram.com" target="_blank" title="Instagram">
+					<i class='bx bxl-instagram' ></i></a>
+				</li>
+				<li><a href="https://www.twitter.com" target="_blank" title="Twitter">
+					<i class='bx bxl-twitter' ></i></a>
+				</li>
+				<li>
+					<a href="https://www.google.com" target="_blank" title="Google">
+					<i class='bx bxl-google' ></i></a>
+				</li>
+			</ul>
+		</nav>
+	</footer>
+
+
+   <a href="#" class="ScrollUp" id="Scroll-Up">
+      <i class='bx bx-up-arrow-alt ScrollUp__Icon'></i>
+   </a>
+	
+
+	<!-- JavaScript JS file -->
+	<script type="text/javascript" src="Script/Btn_Event.js"></script>
+
+	<!-- SCROLL REVEAL -->
+	<script src="Script/scrollreveal.min.js"></script>
+	<script src="Script/Scroll-Pluggin.js"></script>
+
+
+</body>
+</html>

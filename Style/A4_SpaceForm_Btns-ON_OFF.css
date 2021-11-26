@@ -1,0 +1,302 @@
+
+
+/* -------------- Button: #GoAccount -------------- */
+#OnForm {
+	font-family: 'OpenSans-R';
+	font-size: 1.8rem;
+	font-weight: bold;
+	color: var(--Black1);
+	padding: 6px 24px;
+	margin: 20px 0;
+	background: linear-gradient(
+		to top left, 
+		hsl(155, 80%, 60%) 25%, 
+		hsl(185, 80%, 60%) 65%
+	);
+	border: 1px solid hsl(0, 0%, 20%);
+	border-radius: 25px;
+}
+#OnForm:hover {
+	box-shadow: hsla(165, 100%, 50%, 0.5) 2px 2px 2px 0px;
+	border: 1px solid transparent;
+}
+#OnForm:active {
+	background-image: linear-gradient(
+		to top left, 
+		#00f2fe 0%,
+		#4facfe 100% 
+	);
+}
+
+
+
+
+
+/* -------------- Animation: #Burble-full -------------- */
+main.FullSpace::before,
+main.NoneSpace::after {
+	content: '';
+	position: fixed;
+	top: -45px;
+	right: -45px;
+	width: 50px;
+	height: 50px;
+	background-image: linear-gradient(
+		to bottom, 
+		hsl(155, 100%, 48%) 0%, 
+		hsl(165, 100%, 48%) 50%,
+		hsl(175, 100%, 48%) 50%,
+		hsl(185, 100%, 48%) 100%
+	);
+	box-shadow: hsla(180, 46%, 46%, 0.5) 0 0 4px 0;
+	border-radius: 50%;
+	z-index: 900;
+
+	animation: Burble 1.8s normal ease-in;
+	transform-origin: center;
+}
+
+@keyframes Burble {
+	0% {transform: scale(1);}
+	50% {transform: scale(70);}
+	100% {transform: scale(1);}
+}
+
+
+
+
+
+/* ---------------- Div: #SlidesFlex ---------------- */
+#SlidesFlex {
+	position: fixed;
+	top: 5.5rem;
+	left: 0;
+	display: grid;
+	grid-template-rows: 80vh 90vh;
+	height: calc(100vh - 5.5rem);
+	width: 100%;
+	background: linear-gradient(
+		109.21deg, 
+		#0CF1E2 0%, 
+		#00FFC0 96.87%, 
+		#00D69F 100%
+	);
+
+	opacity: 0;
+	pointer-events: none;
+	
+	overflow-x: hidden;
+	z-index: 800;
+}
+
+#SlidesFlex::-webkit-scrollbar-thumb {
+	background: hsl(170, 70%, 40%);
+}
+
+
+img#Wave {
+	display: none;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+
+.FlexItem {
+	display: none;
+}
+
+
+/* -------------- First: Div.FlexItem -------------- */
+.FlexItem:nth-child(1) {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	/*background: hsla(0, 0%, 100%, 0.3);*/
+	
+	background-image: url(../More/WaveForm.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	
+	z-index: 40;
+}
+
+
+/* -------------- Button: #LeaveAccount -------------- */
+#OffForm {
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	height: 4rem;
+	width: 4rem;
+	background: none;
+	border: none;
+}
+#OffForm i {
+	font-family: 'OpenSans-R';
+	font-weight: bold;
+	color: var(--Black1);
+	font-size: 3.4rem;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/*background: hsla(0, 0%, 20%);*/
+}
+#OffForm:hover i {
+	color: var(--White);
+	text-shadow: hsla(0, 0%, 10%) 0px 0px 5px;
+}
+#OffForm:active i {
+	color: var(--White);
+	text-shadow: hsla(0, 0%, 10%) 0px 0px 5px;
+	transform: scale(1.2);
+}
+
+
+#SlidesFlex h2 {
+	font-family: 'Poppins-SB';
+	font-size: 4.3rem;
+	color: var(--Black1);
+	text-align: center;
+	padding: 0;
+	transform: translateY(100%);
+	/*background: hsla(0, 0%, 100%, 0.5);*/
+}
+
+
+img#Login {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	transform-origin: center;
+	transform-box: fill-box;
+	transform: scale(0.9);
+	/*background: hsla(0, 0%, 100%, 0.5);*/
+}
+
+
+/* -------------- Second: Div.FlexItem -------------- */
+.FlexItem:nth-child(2) {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: hsl(0, 0%, 20%);
+	box-shadow: hsl(0, 0%, 20%) 0 0 5px 5px;
+	
+	z-index: 40;
+}
+
+
+
+
+
+/* -------------- Main: .FullSpace .NoneSpace -------------- */
+main.FullSpace #SlidesFlex {
+	opacity: 0;
+	pointer-events: auto;
+	animation: ON_Form 1s linear forwards;
+}
+@keyframes ON_Form {
+	0% {opacity: 0;}
+	90% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+main.NoneSpace #SlidesFlex {
+	opacity: 1;
+	pointer-events: none;
+	animation: OFF_Form 1s linear forwards;
+}
+@keyframes OFF_Form {
+	0% {opacity: 1;}
+	90% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+
+
+/* -------------- Div: #Slides (Destok) -------------- */
+@media only screen and (min-width: 400px){
+	#SlidesFlex h2 {
+		font-size: 4.8rem;
+	}
+}
+@media only screen and (min-width: 500px) {
+	#SlidesFlex h2 {
+		transform: translateY(50%);
+	}
+}
+@media only screen and (min-width: 600px) {
+	#SlidesFlex {
+		grid-template-rows: 90vh 94vh;
+	}
+}
+@media only screen and (min-width: 700px) {
+	img#Login {
+		transform: scale(0.8);
+	}
+}
+@media only screen and (min-width: 800px) {
+	#SlidesFlex {
+		top: 0;
+		left: 6.5rem;
+		height: 100vh;
+		width: calc(100% - 6.5rem);
+		grid-template-rows: 100vh 100vh;
+	}
+	#SlidesFlex h2 {
+		transform: translateY(100%);
+	}
+}
+@media only screen and (min-width: 890px) {
+	#SlidesFlex {
+		top: 0;
+		left: 6.5rem;
+		height: 100vh;
+		width: calc(100% - 6.5rem);
+		grid-template-columns: minmax(30rem, 2fr) 3fr;
+		grid-template-rows: 100vh;
+	}
+	img#Wave {
+		display: block;
+	}
+	.FlexItem:nth-child(1) {
+		background-image: none;
+	}
+	#SlidesFlex h2 {
+		transform: translateY(100%);
+	}
+	img#Login {
+		bottom: 2.4rem;
+		transform: scale(0.85);
+	}
+	.FlexItem:nth-child(2) {
+		background: none;
+		box-shadow: none;
+	}
+}
+@media only screen and (min-width: 895px) {
+	#SlidesFlex h2 {
+		transform: translate(5%, 160%);
+	}
+}
+@media only screen and (min-width: 920px) {
+	img#Login {
+		bottom: 2.4rem;
+		transform: scale(0.90);
+	}
+}
+
+
+
+@media only screen and (max-height: 380px) {
+	#SlidesFlex {
+		grid-template-rows: 170vh 200vh;
+	}
+}

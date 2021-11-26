@@ -1,0 +1,169 @@
+
+
+/* -------------- Form: Div.High-Form -------------- */
+.High-Form {
+	width: 95%;
+	padding: 2.8rem 1.5rem;
+	background: hsl(0, 0%, 30%);
+	box-shadow: hsla(0, 0%, 40%, 0.8) 8px 8px 10px 2px;
+	border-radius: 20px;
+}
+
+.High-Form h3 {
+	font-family: 'Poppins-SB';
+	font-size: 2.5rem;
+	text-align: center;
+	color: var(--White);
+	margin-bottom: 1rem;
+}
+
+
+.High-Form fieldset {
+	display: flex;
+	flex-direction: column;
+	margin-top: 1rem;
+	padding: 0.25rem 1rem;
+	border: none;
+}
+
+.High-Form fieldset legend {
+	font-family: 'OpenSans-R';
+	color: var(--White);
+	font-size: 2rem;
+	font-style: italic;
+	transform: translateX(-1rem);
+}
+
+
+
+
+/* -------------- Input: Div.Full-Input -------------- */
+.Full-Input {
+	position: relative;
+	height: 5rem;
+	width: 100%;
+	margin: 0.25rem 0;
+	overflow: hidden;
+}
+
+.Full-Input input {
+	font-family: 'OpenSans-R';
+	font-size: 1.8rem;
+	color: var(--White);
+	width: 100%;
+	height: 100%;
+	padding-top: 2.2rem;
+	background: none;
+	border: none;
+	outline: none;
+}
+
+
+.Label-Text {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	pointer-events: none;
+	border-bottom: 2px solid var(--White);
+}
+.Label-Text:after {
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	border-bottom: 2px solid var(--IconNoItem1);
+	transform: translateX(-100%);
+	transition: transform 0.3s ease;
+}
+
+
+.Content-Text {
+	font-size: 1.8rem;
+	color: var(--White);
+	position: absolute;
+	bottom: 0;
+	transition: all 0.4s ease;
+}
+
+
+.Full-Input input:focus + .Label-Text .Content-Text,
+.Full-Input input:valid + .Label-Text .Content-Text {
+	font-size: 1.6rem;
+	color: var(--IconNoItem1);
+	transform: translateY(-100%);
+}
+
+
+.Full-Input input:focus + .Label-Text:after,
+.Full-Input input:valid + .Label-Text:after {
+	transform: translateX(0%);
+}
+
+
+
+/* -------------- Butns: Div.Controls -------------- */
+.Controls {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 1.5rem;
+}
+
+.Controls input {
+	font-family: 'OpenSans-R';
+	font-size: 1.8rem;
+	font-weight: bold;
+	color: #000;
+	height: 3rem;
+	margin: 0 5px;
+	padding: 0 20px;
+	background: linear-gradient(
+		to top left, 
+		hsla(155, 80%, 60%, 1) 25%, 
+		hsla(185, 80%, 60%, 1) 65%
+	);
+	border: none;
+	border-radius: 25px;
+}
+.Controls input:hover {
+	box-shadow: hsla(190, 100%, 50%, 0.8) 2px 2px 2px 0px;
+}
+.Controls input:active {
+	background-image: linear-gradient(
+		to top left, 
+		#00f2fe 0%,
+		#4facfe 100% 
+	);
+}
+
+
+
+
+@media only screen and (min-width: 500px){
+	.High-Form {
+		width: 45rem;
+	}
+	.Controls input {
+		height: 3.4rem;
+		padding: 0 25px;
+		margin: 0 8px;
+	}
+}
+@media only screen and (min-width: 890px){
+	.High-Form {
+		width: 40rem;
+	}
+	.High-Form fieldset {
+		margin-top: 2rem;
+	}
+}
+@media only screen and (min-width: 1000px) {
+	.High-Form {
+		width: 46.5rem;
+	}
+}

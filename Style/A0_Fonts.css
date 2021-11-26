@@ -1,0 +1,33 @@
+
+/* @font-face: Poppins */
+@font-face {
+	font-family: 'Poppins-M';
+	src: url('../Fonts/Poppins/Poppins-Medium.ttf');
+}
+@font-face {
+	font-family: 'Poppins-SB';
+	src: url('../Fonts/Poppins/Poppins-SemiBold.ttf');
+}
+@font-face {
+	font-family: 'Poppins-B';
+	src: url('../Fonts/Poppins/Poppins-Bold.ttf');
+}
+
+
+/* @font-face: Open Sans */
+@font-face {
+	font-family: 'OpenSans-R';
+	src: url('../Fonts/OpenSans/OpenSans-Regular.ttf');
+}
+@font-face {
+	font-family: 'OpenSans-I';
+	src: url('../Fonts/OpenSans/OpenSans-Italic.ttf');
+}
+@font-face {
+	font-family: 'OpenSans-SB';
+	src: url('../Fonts/OpenSans/OpenSans-SemiBold.ttf');
+}
+@font-face {
+	font-family: 'OpenSans-B';
+	src: url('../Fonts/OpenSans/OpenSans-Bold.ttf');
+}

@@ -1,0 +1,202 @@
+
+/* -------------------------------------
+----------------- Text -----------------
+------------------------------------- */
+a, b, p, li, blockquote, dt, caption, th, td 
+{
+	font-family: 'OpenSans-R', Arial, sans-serif;
+	font-size: 1.8rem;
+}
+
+i, blockquote, dd {
+	font-family: 'OpenSans-I';
+	font-size: 1.8rem;
+}
+
+b {
+	font-family: 'OpenSans-SB', Arial, sans-serif;
+	font-size: 1.8rem;
+}
+
+
+/*-----------------------------------------
+------------------- Main ------------------
+-----------------------------------------*/
+main {
+	margin: 20px 4px;
+	padding: 10px;
+	box-shadow: var(--BoxShadow);
+}
+body.Dark main {
+	box-shadow: none;
+}
+
+
+h1 {
+   font-family: 'Fredoka One', 'Poppins-B', sans-serif;
+	font-size: 4rem;
+	text-align: center;
+	padding: 20px 5px;
+}
+body.Dark .Gradient-Title {
+   background-image: linear-gradient(45deg, hsl(180, 80%, 50%), hsl(170, 80%, 50%));
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -moz-text-fill-color: transparent;
+}
+
+
+
+hgroup.The-Index {
+	margin-top: 10px;
+	padding: 14px;
+}
+hgroup.The-Index a {
+	color: hsl(200, 100%, 70%);
+	display: inline-block;
+}
+hgroup.The-Index h4 {
+	font-size: 2.2rem;
+	color: hsl(200, 100%, 60%);
+}
+
+
+
+
+
+article {
+	margin: 20px 0;
+	padding: 14px;
+}
+article p {
+	text-align: justify;
+}
+
+section h2 {
+	font-size: 2.8rem;
+	padding: 10px 0;
+}
+section h3 {
+	font-size: 2.4rem;
+	padding: 5px 0;
+}
+
+
+/*----------------------------------------
+---------- Section's Accessories ---------
+----------------------------------------*/
+div.Pre {
+	display: flex;
+	justify-items: center;
+	justify-content: center;
+}
+
+div.Pre pre {
+	font-family: monospace, monospace;
+	font-size: 14px;
+}
+
+code {
+	letter-spacing: 1px;
+	font-size: 14px;
+}
+
+div.Blockquote,
+dl.DescriptiveList {
+	margin-top: 35px;
+	margin-bottom: 15px;
+}
+
+blockquote, dd {
+	font-style: italic;
+	margin-left: 30px;
+}
+
+hr {
+	background: var(--IconNoItem2);
+	border: 0.8px solid var(--IconNoItem2);
+	margin: 5px 0;
+}
+
+article ul,
+article ol {
+	display: inline-block;
+	padding: 5px 35px;
+}
+
+
+
+/* -------------- Table: No más porque sí -------------- */
+table {
+	width caption,: 100%;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+table caption,
+table tr th, 
+table tr td {
+	padding: 6px 0;
+	padding-left: 4px;
+	border: 1px solid hsl(0, 0%, 14%);
+}
+body.Dark table caption,
+body.Dark table tr th, 
+body.Dark table tr td {
+	border: 1px solid hsl(0, 0%, 50%);
+}
+table caption {
+	font-family: 'OpenSans-B';
+	text-align: center;
+	vertical-align: center;
+}
+table th {
+	font-family: 'OpenSans-B';
+	text-align: center;
+	vertical-align: center;
+}
+tr:nth-child(2n) {
+	background: linear-gradient(
+		to top left, 
+		#0099ff 0%, 
+		#66ff33 100%
+	);
+}
+td:hover {
+	background: linear-gradient(
+		to top left, 
+		#00ffff 0%, 
+		#cc33ff 100%
+	);
+	color: hsl(0, 0%, 0%);
+	font-weight: bold;
+}
+
+
+
+
+/*__________________________________________________________*/
+/*____________________ 400px Very Good _____________________*/
+/*__________________________________________________________*/
+@media only screen and (min-width caption,: 430px) {
+	div.Pre pre {
+		font-size: 15px;
+	}
+}
+
+@media only screen and (min-width caption,: 520px) {
+	div.Pre pre {
+		font-size: 16px;
+	}
+}
+
+@media only screen and (min-width caption,: 560px) {
+	table {
+		width caption,: -moz-fit-content;
+		width caption,: fit-content;
+	}
+	table tr th, table tr td {
+		padding: 10px;
+		padding-left: 5px;
+	}
+}
